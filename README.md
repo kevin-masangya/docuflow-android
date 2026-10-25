@@ -8,6 +8,27 @@ DocuFlow gives an organization a single place to upload, review, approve, search
 
 > This project was originally an academic Android app named `LoginSignup`. It has been cleaned up, rebranded, and prepared as a portfolio project. The internal package name (`com.example.loginsignup`) is kept so the existing Firebase Android configuration continues to work.
 
+## App preview
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="docs/screenshots/login.png" width="280" alt="DocuFlow login screen" /><br />
+      <sub><b>Sign in</b> — username, Google, and Facebook</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/screenshots/staff-dashboard.png" width="280" alt="DocuFlow staff dashboard" /><br />
+      <sub><b>Staff dashboard</b> — personal document stats and actions</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/screenshots/admin-dashboard.png" width="280" alt="DocuFlow admin dashboard" /><br />
+      <sub><b>Admin dashboard</b> — approvals, users, and audit tools</sub>
+    </td>
+  </tr>
+</table>
+
+Screenshots were captured from the debug build on a Pixel 6 emulator (Android 15).
+
 ---
 
 ## Why it exists
