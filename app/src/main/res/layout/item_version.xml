@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvVersionDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: Loading..."
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvVersionUploader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By: User"
+            android:textColor="#757575"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_marginVertical="12dp"/>
+
+        <Button
+            android:id="@+id/btnViewVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open This Version"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

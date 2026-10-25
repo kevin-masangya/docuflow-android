@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/auth_bg">
+
+    <!-- 🔍 SEARCH BAR -->
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Search approved documents..."
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:background="@drawable/bg_card_elevated"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:singleLine="true" />
+
+    <!-- ⏳ LOADING -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <!-- EMPTY STATE -->
+    <TextView
+        android:id="@+id/tvEmptyState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="No approved documents yet.\nUploads appear here after an admin approves them."
+        android:textColor="@color/auth_text_secondary"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <!-- 📄 LIST -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp" />
+
+</LinearLayout>

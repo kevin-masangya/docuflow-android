@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/auth_bg"
+    tools:context=".PendingApproval">
+
+    <!-- 🔹 APP BAR -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:title="Pending Approvals"
+            android:titleTextColor="@android:color/white"
+            app:backgroundTint="@color/auth_primary_blue" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- 🔹 MAIN CONTENT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- 🔸 ARCHIVE BUTTON -->
+
+        <!-- 🔸 YOUR EXISTING CONTENT -->
+        <include layout="@layout/content_pending_approval" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnViewRejected"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/auth_primary_blue"
+        android:text="📦 View Rejected Documents"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="center" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

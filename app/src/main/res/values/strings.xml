@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DocuFlow</string>
+    <string name="facebook_app_id">YOUR_FACEBOOK_APP_ID</string>
+    <string name="fb_login_protocol_scheme">fbYOUR_FACEBOOK_APP_ID</string>
+    <string name="facebook_client_token">YOUR_FACEBOOK_CLIENT_TOKEN</string>
+    <string name="default_web_client_id">YOUR_GOOGLE_WEB_CLIENT_ID.apps.googleusercontent.com</string>
+    <string name="role_admin">ADMIN</string>
+    <string name="greeting_user">Good morning, Juan.</string>
+    <string name="stat_documents_count">128</string>
+    <string name="stat_documents_label">Documents</string>
+    <string name="stat_pending_count">7</string>
+    <string name="stat_pending_label">Pending</string>
+    <string name="stat_activity_today_count">34</string>
+    <string name="stat_activity_today_label">Actions Today</string>
+    <string name="quick_actions_title">QUICK ACTIONS</string>
+    <string name="quick_action_upload">＋ Upload Document</string>
+    <string name="quick_action_browse">Browse Repository</string>
+    <string name="quick_action_pending">Pending Approvals</string>
+    <string name="document_tools_title">DOCUMENT TOOLS</string>
+    <string name="doc_tool_version_history">Version History</string>
+    <string name="doc_tool_activity_logs">Activity Logs</string>
+    <string name="doc_tool_reports">Reports</string>
+    <string name="doc_tool_manage_users">Manage Users</string>
+    <string name="account_title">ACCOUNT</string>
+    <string name="account_update_details">Update Account Details  →</string>
+    <string name="account_logout">Logout</string>
+</resources>

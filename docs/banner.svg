@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="DocuFlow — role-based document management for Android">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A3FFF"/>
+      <stop offset="1" stop-color="#0B1E99"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <circle cx="1080" cy="40" r="260" fill="#385CFF" opacity="0.7"/>
+  <circle cx="110" cy="380" r="220" fill="#D6E0FF" opacity="0.08"/>
+
+  <!-- icon -->
+  <g transform="translate(90, 116)">
+    <rect width="168" height="168" rx="38" fill="#FFFFFF"/>
+    <path d="M46 28h62l24 24v88H46z" fill="#1A3FFF"/>
+    <path d="M108 28v24h24z" fill="#8FA5FF"/>
+    <rect x="62" y="70" width="58" height="10" rx="5" fill="#FFFFFF"/>
+    <rect x="62" y="92" width="58" height="10" rx="5" fill="#FFFFFF"/>
+    <rect x="62" y="114" width="38" height="10" rx="5" fill="#FFFFFF"/>
+  </g>
+
+  <text x="306" y="212" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="96" font-weight="700" letter-spacing="-3">DocuFlow</text>
+  <text x="310" y="264" fill="#D6E0FF" font-family="Segoe UI, Arial, sans-serif" font-size="28" letter-spacing="0.6">Role-based document management for Android</text>
+  <text x="310" y="316" fill="#8FA5FF" font-family="Consolas, monospace" font-size="20" letter-spacing="2">JAVA · FIREBASE · CLOUDINARY · MATERIAL 3</text>
+</svg>

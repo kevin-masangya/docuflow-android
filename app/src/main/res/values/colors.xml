@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#FF6200EE</color>  <color name="auth_bg">#F5F2EB</color>               <!-- warm off-white background -->
+    <color name="auth_primary_blue">#1A3FFF</color>      <!-- bold electric blue -->
+    <color name="auth_text_primary">#0D0D0D</color>      <!-- near-black -->
+    <color name="auth_text_secondary">#888888</color>    <!-- muted grey -->
+    <color name="auth_hint">#BBBBBB</color>              <!-- placeholder text -->
+    <color name="auth_divider">#DDD8CC</color>           <!-- warm light divider -->
+    <color name="auth_accent_light">#D6E0FF</color>
+</resources>
