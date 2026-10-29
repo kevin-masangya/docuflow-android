@@ -13,3 +13,6 @@ local.properties
 *.keystore
 app/build/
 app/release/
+
+# Local Firebase configuration (contains project-specific keys and identifiers)
+app/google-services.json

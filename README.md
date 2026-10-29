@@ -205,7 +205,7 @@ app/src/main/java/com/example/loginsignup/
 - Android Studio (or a standalone Android SDK)
 - JDK 17
 - Android SDK 36
-- A Firebase project and a Cloudinary account if you are using your own backend
+- Your own Firebase project and Cloudinary account (see [Backend configuration](#backend-configuration))
 
 ### Run locally
 
@@ -230,25 +230,27 @@ The debug APK is written to `app/build/outputs/apk/debug/app-debug.apk`.
 
 ### Backend configuration
 
-The repository includes the original demo `app/google-services.json` so the project builds out of the box. To use your own backend:
+No backend credentials are committed to this repository. To run the app with your own backend:
 
 1. Create a Firebase project and add an Android app with package `com.example.loginsignup`.
-2. Replace `app/google-services.json`.
-3. Enable **Authentication** providers: Email/Password, Google, Facebook.
-4. Create a Realtime Database and a Firestore database.
-5. Replace the Cloudinary cloud name and unsigned upload preset in `home_admin.java`, `home_staff.java`, `BrowseRepositoryActivity.java`, and `userSubmissions.java`.
-6. Add Firestore indexes if prompted by the console (documents filtered by `status` / `uploadedBy` and ordered by `timestamp`).
+2. Copy `app/google-services.json.example` to `app/google-services.json` and fill in the values from your Firebase project. The real file is git-ignored.
+3. In `app/src/main/res/values/strings.xml`, replace `YOUR_FACEBOOK_APP_ID`, `YOUR_FACEBOOK_CLIENT_TOKEN`, and `YOUR_GOOGLE_WEB_CLIENT_ID` with your own values.
+4. Enable **Authentication** providers: Email/Password, Google, Facebook.
+5. Create a Realtime Database and a Firestore database.
+6. Replace `YOUR_CLOUDINARY_CLOUD_NAME` and `YOUR_CLOUDINARY_UPLOAD_PRESET` in `home_admin.java`, `home_staff.java`, and `BrowseRepositoryActivity.java`.
+7. Add Firestore indexes if prompted by the console (documents filtered by `status` / `uploadedBy` and ordered by `timestamp`).
 
 ---
 
 ## Security notes
 
-This is a portfolio/demo build and it keeps the original demo credentials so the app remains runnable:
+This is a portfolio/demo build. All API keys, tokens, and account-specific identifiers have been removed from the repository and replaced with placeholders:
 
-- Firebase client configuration (`google-services.json`) is not a server secret, but the demo project's rules and data are not intended for production.
-- The Cloudinary upload preset is an **unsigned** preset embedded in the client. For a production app, restrict the preset (allowed formats, max size, folder) and move uploads behind a signed server endpoint.
+- `app/google-services.json` is git-ignored. Use `app/google-services.json.example` as the template for your own Firebase project.
+- Facebook, Google, and Cloudinary values in the source are placeholders and must be replaced before running the app.
+- The Cloudinary upload preset is **unsigned**, so it is embedded in the client by design. For a production app, restrict the preset (allowed formats, max size, folder) and move uploads behind a signed server endpoint.
 - Before using this with real user data, write Firebase Security Rules, enable App Check, and separate admin actions behind custom claims or a trusted backend.
-- Rotate the demo Firebase/Cloudinary configuration before publishing your own production version.
+- If you previously committed real credentials to a repository, rotate them in the provider consoles. Removing them from the latest commit does not invalidate keys that may already be exposed.
 
 ---
 
